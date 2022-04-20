@@ -10,7 +10,7 @@ import {
   PrinterIcon,
   MoonIcon,
   SunIcon,
-} from "@heroicons/react/solid";
+} from "@heroicons/react/outline";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -18,34 +18,41 @@ export default function Home() {
   return (
     <>
       <button
-        className="absolute top-0 left-0 print:hidden bg-yellow-400 p-2 pb-3 pr-3 rounded-br-full"
+        className="fixed top-0 left-0 print:hidden bg-yellow-400 p-1 pb-3 pr-3 rounded-br-full overflow-hidden z-50"
         onClick={() => window.print()}
       >
-        <PrinterIcon className="h-6 w-6 shrink-0 text-black" />
+        <PrinterIcon className="h-8 w-8 shrink-0 text-black" />
       </button>
 
       <button
-        className="absolute top-0 right-0 print:hidden bg-yellow-400 p-2 pb-3 pl-3 rounded-bl-full"
+        className="fixed top-0 right-0 print:hidden bg-yellow-400 p-1 pb-3 pl-3 rounded-bl-full overflow-hidden z-50"
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       >
         {theme === "light" ? (
-          <MoonIcon className="h-6 w-6 shrink-0 text-black" />
+          <MoonIcon className="h-8 w-8 shrink-0 text-black" />
         ) : (
-          <SunIcon className="h-6 w-6 shrink-0 text-black" />
+          <SunIcon className="h-8 w-8 shrink-0 text-black" />
         )}
       </button>
 
-      <div className="grid gap-8 p-5 max-w-2xl mx-auto">
+      <main className="grid gap-8 p-5 max-w-2xl mx-auto">
         <section>
-          <Image
-            className="rounded-full"
-            src="/48958400.jpg"
-            alt="profile"
-            height={200}
-            width={200}
-          />
+          <div className="h-40 w-40 overflow-hidden rounded-full border-8 border-gray-400 shadow-lg">
+            <Image src="/profile.jpg" alt="profile" height={200} width={200} />
+          </div>
+
           <h1 className="text-4xl font-bold tracking-wider">Henry Li</h1>
           <h3>Immediately available</h3>
+        </section>
+
+        <section>
+          <h3 className="font-bold tracking-widest underline decoration-2">
+            INTRODUCTION
+          </h3>
+          <p>
+            A software developer with a strong analytical mind seeking for a
+            position in a dynamic and progressive company
+          </p>
         </section>
 
         <section>
@@ -78,7 +85,7 @@ export default function Home() {
             </p>
             <progress
               className="progress progress-success print:hidden"
-              value="90"
+              value="95"
               max="100"
             />
           </div>
@@ -102,7 +109,7 @@ export default function Home() {
             </p>
             <progress
               className="progress progress-success print:hidden"
-              value="80"
+              value="85"
               max="100"
             />
           </div>
@@ -116,7 +123,7 @@ export default function Home() {
             <div>
               <p className="font-bold italic">The University of Manchester</p>
               <p className="flex gap-1 items-center">
-                <AcademicCapIcon className="h-4 w-4 shrink-0 text-green-400" />{" "}
+                <AcademicCapIcon className="h-5 w-5 shrink-0 text-green-400" />{" "}
                 BA Economics
               </p>
             </div>
@@ -126,17 +133,7 @@ export default function Home() {
 
         <section>
           <h3 className="font-bold tracking-widest underline decoration-2">
-            INTRODUCTION
-          </h3>
-          <p>
-            A software developer with a strong analytical mind seeking for a
-            position in a dynamic and progressive company
-          </p>
-        </section>
-
-        <section>
-          <h3 className="font-bold tracking-widest underline decoration-2">
-            TECHNOLOGIES
+            ADDITIONAL TECHNOLOGIES
           </h3>
           <div className="flex items-center gap-2 mt-1">
             <div className="tooltip tooltip-bottom" data-tip="Typescript">
@@ -146,6 +143,15 @@ export default function Home() {
                 height={35}
                 width={35}
               />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Python">
+              <Image src="/python.svg" alt="Python" height={35} width={35} />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Dart">
+              <Image src="/dart.svg" alt="Dart" height={35} width={35} />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Rust">
+              <Image src="/rust.svg" alt="Rust" height={35} width={35} />
             </div>
             <div className="tooltip tooltip-bottom" data-tip="Svelte">
               <Image
@@ -163,14 +169,22 @@ export default function Home() {
                 width={35}
               />
             </div>
-            <div className="tooltip tooltip-bottom" data-tip="pnpm">
-              <Image src="/pnpm.svg" alt="pnpm" height={35} width={35} />
-            </div>
             <div className="tooltip tooltip-bottom" data-tip="Deno">
               <Image src="/deno.svg" alt="Deno" height={35} width={35} />
             </div>
-            <div className="tooltip tooltip-bottom" data-tip="Rust">
-              <Image src="/rust.svg" alt="Rust" height={35} width={35} />
+            <div className="tooltip tooltip-bottom" data-tip="Bash">
+              <Image src="/bash-icon.svg" alt="Bash" height={35} width={35} />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="VS Code">
+              <Image
+                src="/visual-studio-code.svg"
+                alt="VS Code"
+                height={35}
+                width={35}
+              />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Vim">
+              <Image src="/vim.svg" alt="Vim" height={35} width={35} />
             </div>
           </div>
         </section>
@@ -210,6 +224,14 @@ export default function Home() {
                 <div className="tooltip tooltip-bottom" data-tip="Vue.js">
                   <Image src="/vue.svg" alt="Vue.js" height={35} width={35} />
                 </div>
+                <div className="tooltip tooltip-bottom" data-tip="Tailwindcss">
+                  <Image
+                    src="/tailwindcss-icon.svg"
+                    alt="Tailwindcss"
+                    height={35}
+                    width={35}
+                  />
+                </div>
                 <div className="tooltip tooltip-bottom" data-tip="Vite">
                   <Image src="/vitejs.svg" alt="Vite" height={35} width={35} />
                 </div>
@@ -223,9 +245,23 @@ export default function Home() {
                 </div>
               </div>
               <ul className="list-disc ml-4">
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                  Develop multiple frontend web applications with Vue related
+                  technologies
+                </li>
+                <li>
+                  Develop backend API gateway to support frontend
+                  functionalities such as authentication, business logic,
+                  database
+                </li>
+                <li>
+                  Provide wireframing and collaborate with design team to
+                  enhance user interface
+                </li>
+                <li>
+                  Work with CI/CD pipeline to automate project deployment and
+                  testing
+                </li>
               </ul>
             </div>
 
@@ -244,10 +280,10 @@ export default function Home() {
                 <div className="tooltip tooltip-bottom" data-tip="Vue.js">
                   <Image src="/vue.svg" alt="Vue.js" height={35} width={35} />
                 </div>
-                <div className="tooltip tooltip-bottom" data-tip="Flutter">
+                <div className="tooltip tooltip-bottom" data-tip="Tailwindcss">
                   <Image
-                    src="/flutter.svg"
-                    alt="Flutter"
+                    src="/tailwindcss-icon.svg"
+                    alt="Tailwindcss"
                     height={35}
                     width={35}
                   />
@@ -256,6 +292,14 @@ export default function Home() {
                   <Image
                     src="/bootstrap.svg"
                     alt="Bootstrap"
+                    height={35}
+                    width={35}
+                  />
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="Flutter">
+                  <Image
+                    src="/flutter.svg"
+                    alt="Flutter"
                     height={35}
                     width={35}
                   />
@@ -309,7 +353,16 @@ export default function Home() {
                 </div>
                 <p className="text-sm italic shrink-0">Mar 20 - Jan 21</p>
               </div>
-
+              <div className="flex items-center gap-2">
+                <div className="tooltip tooltip-bottom" data-tip="Selenium">
+                  <Image
+                    src="/selenium.svg"
+                    alt="Selenium"
+                    height={35}
+                    width={35}
+                  />
+                </div>
+              </div>
               <ul className="list-disc ml-4">
                 <li>
                   Assisted on internal and external IT incidents with ITSM
@@ -336,7 +389,16 @@ export default function Home() {
                 </div>
                 <p className="text-sm italic shrink-0">Jun 19 - Mar 20</p>
               </div>
-
+              <div className="flex items-center gap-2">
+                <div className="tooltip tooltip-bottom" data-tip="Selenium">
+                  <Image
+                    src="/selenium.svg"
+                    alt="Selenium"
+                    height={35}
+                    width={35}
+                  />
+                </div>
+              </div>
               <ul className="list-disc ml-4">
                 <li>
                   Ensured efficient IT operations on multiple projects (up to
@@ -354,7 +416,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </div>
+      </main>
     </>
   );
 }
