@@ -172,6 +172,14 @@ export default function Home() {
             <div className="tooltip tooltip-bottom" data-tip="Deno">
               <Image src="/deno.svg" alt="Deno" height={35} width={35} />
             </div>
+            <div className="tooltip tooltip-bottom" data-tip="Selenium">
+              <Image
+                src="/selenium.svg"
+                alt="Selenium"
+                height={35}
+                width={35}
+              />
+            </div>
             <div className="tooltip tooltip-bottom" data-tip="Bash">
               <Image src="/bash-icon.svg" alt="Bash" height={35} width={35} />
             </div>
@@ -268,7 +276,7 @@ export default function Home() {
             <div>
               <div className="flex justify-between items-center">
                 <div>
-                  <p className="text-xl font-bold">Madtec</p>
+                  <p className="text-xl font-bold">MADTec Solutions Limited</p>
                   <p>Web Developer</p>
                 </div>
                 <p className="text-sm italic shrink-0">Jan 21 - Aug 21</p>
@@ -348,20 +356,12 @@ export default function Home() {
             <div>
               <div className="flex justify-between items-center">
                 <div>
-                  <p className="text-xl font-bold">HGC</p>
+                  <p className="text-xl font-bold">
+                    HGC Global Communications Limited
+                  </p>
                   <p>Support Officer</p>
                 </div>
                 <p className="text-sm italic shrink-0">Mar 20 - Jan 21</p>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="tooltip tooltip-bottom" data-tip="Selenium">
-                  <Image
-                    src="/selenium.svg"
-                    alt="Selenium"
-                    height={35}
-                    width={35}
-                  />
-                </div>
               </div>
               <ul className="list-disc ml-4">
                 <li>
@@ -383,21 +383,11 @@ export default function Home() {
               <div className="flex justify-between items-center">
                 <div>
                   <p className="text-xl font-bold">
-                    Automated System Holdings Limited
+                    Automated Systems (HK) Limited
                   </p>
                   <p>Service Desk Specialist</p>
                 </div>
                 <p className="text-sm italic shrink-0">Jun 19 - Mar 20</p>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="tooltip tooltip-bottom" data-tip="Selenium">
-                  <Image
-                    src="/selenium.svg"
-                    alt="Selenium"
-                    height={35}
-                    width={35}
-                  />
-                </div>
               </div>
               <ul className="list-disc ml-4">
                 <li>
