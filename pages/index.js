@@ -135,7 +135,11 @@ export default function Home() {
           <h3 className="font-bold tracking-widest underline decoration-2 mb-1">
             ADDITIONAL TECHNOLOGIES
           </h3>
-          <div className="flex flex-wrap items-center gap-2">
+          <p className="hidden print:inline">
+            Flutter, Rust, Typescript, Python, Svelte, Selenium, Bash, VS Code,
+            Vim
+          </p>
+          <div className="flex flex-wrap items-center gap-2 print:hidden">
             <div className="tooltip tooltip-bottom" data-tip="Flutter">
               <Image src="/flutter.svg" alt="Flutter" height={35} width={35} />
             </div>
@@ -201,7 +205,10 @@ export default function Home() {
                 </div>
                 <p className="text-sm italic shrink-0">Nov 21 - Apr 22</p>
               </div>
-              <div className="flex flex-wrap items-center gap-2">
+              <p className="hidden print:inline">
+                Angular, dotnet, Vue.js, Tailwindcss, Vite, Gitlab, Kubernetes
+              </p>
+              <div className="flex flex-wrap items-center gap-2 print:hidden">
                 <div className="tooltip tooltip-bottom" data-tip="Angular">
                   <Image
                     src="/angular-icon.svg"
@@ -240,6 +247,14 @@ export default function Home() {
                     width={35}
                   />
                 </div>
+                <div className="tooltip tooltip-bottom" data-tip="Kubernetes">
+                  <Image
+                    src="/kubernetes.svg"
+                    alt="Kubernetes"
+                    height={35}
+                    width={35}
+                  />
+                </div>
               </div>
               <ul className="list-disc ml-4">
                 <li>
@@ -258,7 +273,10 @@ export default function Home() {
                 </div>
                 <p className="text-sm italic shrink-0">Jan 21 - Aug 21</p>
               </div>
-              <div className="flex flex-wrap items-center gap-2">
+              <p className="hidden print:inline">
+                React, Vue.js, Bootstrap, Github, Github Actions, Docker
+              </p>
+              <div className="flex flex-wrap items-center gap-2 print:hidden">
                 <div className="tooltip tooltip-bottom" data-tip="React">
                   <Image src="/react.svg" alt="React" height={35} width={35} />
                 </div>
@@ -289,6 +307,14 @@ export default function Home() {
                   <Image
                     src="/github-actions.svg"
                     alt="Github Actions"
+                    height={35}
+                    width={35}
+                  />
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="Docker">
+                  <Image
+                    src="/docker-icon.svg"
+                    alt="Docker"
                     height={35}
                     width={35}
                   />
