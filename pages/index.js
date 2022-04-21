@@ -136,6 +136,12 @@ export default function Home() {
             ADDITIONAL TECHNOLOGIES
           </h3>
           <div className="flex flex-wrap items-center gap-2">
+            <div className="tooltip tooltip-bottom" data-tip="Flutter">
+              <Image src="/flutter.svg" alt="Flutter" height={35} width={35} />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Rust">
+              <Image src="/rust.svg" alt="Rust" height={35} width={35} />
+            </div>
             <div className="tooltip tooltip-bottom" data-tip="Typescript">
               <Image
                 src="/typescript-icon.svg"
@@ -147,12 +153,6 @@ export default function Home() {
             <div className="tooltip tooltip-bottom" data-tip="Python">
               <Image src="/python.svg" alt="Python" height={35} width={35} />
             </div>
-            <div className="tooltip tooltip-bottom" data-tip="Dart">
-              <Image src="/dart.svg" alt="Dart" height={35} width={35} />
-            </div>
-            <div className="tooltip tooltip-bottom" data-tip="Rust">
-              <Image src="/rust.svg" alt="Rust" height={35} width={35} />
-            </div>
             <div className="tooltip tooltip-bottom" data-tip="Svelte">
               <Image
                 src="/svelte-icon.svg"
@@ -160,17 +160,6 @@ export default function Home() {
                 height={35}
                 width={35}
               />
-            </div>
-            <div className="tooltip tooltip-bottom" data-tip="Node.js">
-              <Image
-                src="/nodejs-icon.svg"
-                alt="Node.js"
-                height={35}
-                width={35}
-              />
-            </div>
-            <div className="tooltip tooltip-bottom" data-tip="Deno">
-              <Image src="/deno.svg" alt="Deno" height={35} width={35} />
             </div>
             <div className="tooltip tooltip-bottom" data-tip="Selenium">
               <Image
@@ -252,7 +241,13 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <ul className="list-disc ml-4"></ul>
+              <ul className="list-disc ml-4">
+                <li>
+                  Collaborate with colleagues on multiple web applications
+                </li>
+                <li>Compose extensive documentations for new projects</li>
+                <li>Collaborate with DevOps colleagues to implement CI/CD</li>
+              </ul>
             </div>
 
             <div>
@@ -270,26 +265,11 @@ export default function Home() {
                 <div className="tooltip tooltip-bottom" data-tip="Vue.js">
                   <Image src="/vue.svg" alt="Vue.js" height={35} width={35} />
                 </div>
-                <div className="tooltip tooltip-bottom" data-tip="Tailwindcss">
-                  <Image
-                    src="/tailwindcss-icon.svg"
-                    alt="Tailwindcss"
-                    height={35}
-                    width={35}
-                  />
-                </div>
+
                 <div className="tooltip tooltip-bottom" data-tip="Bootstrap">
                   <Image
                     src="/bootstrap.svg"
                     alt="Bootstrap"
-                    height={35}
-                    width={35}
-                  />
-                </div>
-                <div className="tooltip tooltip-bottom" data-tip="Flutter">
-                  <Image
-                    src="/flutter.svg"
-                    alt="Flutter"
                     height={35}
                     width={35}
                   />
@@ -315,16 +295,13 @@ export default function Home() {
                 </div>
               </div>
               <ul className="list-disc ml-4">
-                <li>Handle multiple frontend web applications</li>
+                <li>Develop multiple frontend web applications</li>
                 <li>
                   Develop backend services to support functionalities like
                   authentication, data storage and retrieval, etc...
                 </li>
                 <li>Work on UI wireframing and web design with design team</li>
-                <li>
-                  Work with CI/CD pipeline to automate project deployment and
-                  testing
-                </li>
+                <li>Enhance project workflow with CI/CD pipeline</li>
               </ul>
             </div>
 
