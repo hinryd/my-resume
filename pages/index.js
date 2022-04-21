@@ -132,10 +132,10 @@ export default function Home() {
         </section>
 
         <section>
-          <h3 className="font-bold tracking-widest underline decoration-2">
+          <h3 className="font-bold tracking-widest underline decoration-2 mb-1">
             ADDITIONAL TECHNOLOGIES
           </h3>
-          <div className="flex items-center gap-2 mt-1">
+          <div className="flex flex-wrap items-center gap-2">
             <div className="tooltip tooltip-bottom" data-tip="Typescript">
               <Image
                 src="/typescript-icon.svg"
@@ -212,7 +212,7 @@ export default function Home() {
                 </div>
                 <p className="text-sm italic shrink-0">Nov 21 - Apr 22</p>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 <div className="tooltip tooltip-bottom" data-tip="Angular">
                   <Image
                     src="/angular-icon.svg"
@@ -252,25 +252,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <ul className="list-disc ml-4">
-                <li>
-                  Develop multiple frontend web applications with Vue related
-                  technologies
-                </li>
-                <li>
-                  Develop backend API gateway to support frontend
-                  functionalities such as authentication, business logic,
-                  database
-                </li>
-                <li>
-                  Provide wireframing and collaborate with design team to
-                  enhance user interface
-                </li>
-                <li>
-                  Work with CI/CD pipeline to automate project deployment and
-                  testing
-                </li>
-              </ul>
+              <ul className="list-disc ml-4"></ul>
             </div>
 
             <div>
@@ -281,7 +263,7 @@ export default function Home() {
                 </div>
                 <p className="text-sm italic shrink-0">Jan 21 - Aug 21</p>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 <div className="tooltip tooltip-bottom" data-tip="React">
                   <Image src="/react.svg" alt="React" height={35} width={35} />
                 </div>
@@ -333,19 +315,12 @@ export default function Home() {
                 </div>
               </div>
               <ul className="list-disc ml-4">
+                <li>Handle multiple frontend web applications</li>
                 <li>
-                  Develop multiple frontend web applications with Vue related
-                  technologies
+                  Develop backend services to support functionalities like
+                  authentication, data storage and retrieval, etc...
                 </li>
-                <li>
-                  Develop backend API gateway to support frontend
-                  functionalities such as authentication, business logic,
-                  database
-                </li>
-                <li>
-                  Provide wireframing and collaborate with design team to
-                  enhance user interface
-                </li>
+                <li>Work on UI wireframing and web design with design team</li>
                 <li>
                   Work with CI/CD pipeline to automate project deployment and
                   testing
@@ -365,17 +340,10 @@ export default function Home() {
               </div>
               <ul className="list-disc ml-4">
                 <li>
-                  Assisted on internal and external IT incidents with ITSM
-                  compliance
+                  Handle internal and external IT incidents with ITSM compliance
                 </li>
-                <li>
-                  Developed tools and templates to assist on service delivery
-                  (Selenium IDE, Python)
-                </li>
-                <li>
-                  Collaborated with external RPA provider to automate specific
-                  workflow (Blue Prism)
-                </li>
+                <li>Develop tools and templates to boost work productivity</li>
+                <li>Collaborate with RPA provider to automate workflow</li>
               </ul>
             </div>
 
@@ -391,16 +359,12 @@ export default function Home() {
               </div>
               <ul className="list-disc ml-4">
                 <li>
-                  Ensured efficient IT operations on multiple projects (up to
-                  10) and complied to predefined SLA
+                  Handle IT operations efficiently in 10 different projects
                 </li>
+                <li>Develop scripts to aid workflow and report generation</li>
                 <li>
-                  Developed several scripts to assist with projects work ow and
-                  report generation (Selenium IDE, VBA, Lua)
-                </li>
-                <li>
-                  Aided with administrative tasks such as scheduling colleagues
-                  duties
+                  Handle administrative tasks such as scheduling colleagues
+                  duties and distributing works
                 </li>
               </ul>
             </div>
