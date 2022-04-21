@@ -35,14 +35,14 @@ export default function Home() {
         )}
       </button>
 
-      <main className="grid gap-8 p-5 max-w-2xl mx-auto">
+      <main className="grid gap-7 p-6 max-w-2xl mx-auto">
         <section>
           <div className="h-40 w-40 overflow-hidden rounded-full border-8 border-gray-400 shadow-lg">
             <Image src="/profile.jpg" alt="profile" height={200} width={200} />
           </div>
 
           <h1 className="text-4xl font-bold tracking-wider">Henry Li</h1>
-          <h3>Immediately available</h3>
+          <h3 className="font-light">Immediately available</h3>
         </section>
 
         <section>
