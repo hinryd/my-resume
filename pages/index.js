@@ -97,24 +97,28 @@ export default function Home() {
               <p className="flex gap-1 items-center">
                 <GlobeAltIcon className="h-4 w-4 shrink-0 text-red-400" />
                 <span className="-z-10">English</span>
+                <p className="hidden print:inline font-bold">Fluent</p>
               </p>
               <progress
-                className="progress progress-success"
+                className="progress progress-success print:hidden"
                 value="95"
                 max="100"
               />
             </div>
+
             <div className="tooltip tooltip-bottom w-full" data-tip="Native">
               <p className="flex gap-1 items-center">
                 <GlobeAltIcon className="h-4 w-4 shrink-0 text-indigo-400" />
                 <span className="-z-10">Cantonese</span>
+                <p className="hidden print:inline font-bold">Native</p>
               </p>
               <progress
-                className="progress progress-success"
+                className="progress progress-success print:hidden"
                 value="100"
                 max="100"
               />
             </div>
+
             <div
               className="tooltip tooltip-bottom w-full"
               data-tip="Proficient"
@@ -122,9 +126,10 @@ export default function Home() {
               <p className="flex gap-1 items-center">
                 <GlobeAltIcon className="h-4 w-4 shrink-0 text-yellow-400" />
                 <span className="-z-10">Mandarin</span>
+                <p className="hidden print:inline font-bold">Proficient</p>
               </p>
               <progress
-                className="progress progress-success"
+                className="progress progress-success print:hidden"
                 value="85"
                 max="100"
               />
@@ -138,8 +143,11 @@ export default function Home() {
               INTRO
             </h3>
             <p>
-              A software developer with a strong analytical mind seeking for a
-              position in a dynamic and progressive company
+              I am a passionate software engineer who strives to write clean and
+              maintainable code adhering to FP techniques and OOP principles.
+              Desperate to step outside my comfort zone, I am pursuing a
+              software position to learn more about different tech stacks in
+              various disciplines in a progressive company.
             </p>
           </section>
           <section>
@@ -235,10 +243,16 @@ export default function Home() {
                 </div>
                 <ul className="list-disc ml-4">
                   <li>
-                    Collaborate with colleagues on multiple web applications
+                    Design and improve the software architecture and code
+                    readability of the app
                   </li>
-                  <li>Compose extensive documentations for new projects</li>
-                  <li>Collaborate with DevOps colleagues to implement CI/CD</li>
+                  <li>
+                    Optimize rendering performance of the app on web platform
+                  </li>
+                  <li>
+                    Implement various new features, bug fixes and UX
+                    improvements to the app
+                  </li>
                 </ul>
               </div>
               <div>
@@ -398,7 +412,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div>
+              {/* <div>
                 <div className="flex justify-between items-center">
                   <div>
                     <p className="text-xl font-bold">
@@ -418,9 +432,9 @@ export default function Home() {
                   </li>
                   <li>Collaborate with RPA provider to automate workflow</li>
                 </ul>
-              </div>
+              </div> */}
 
-              <div>
+              {/* <div>
                 <div className="flex justify-between items-center">
                   <div>
                     <p className="text-xl font-bold">
@@ -440,7 +454,7 @@ export default function Home() {
                     duties and distributing works
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </section>
         </div>
