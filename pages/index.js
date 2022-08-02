@@ -35,19 +35,19 @@ export default function Home() {
         )}
       </button>
 
-      <main className="grid md:grid-cols-12 gap-7 p-4 max-w-5xl mx-auto transition-all duration-500">
+      <main className="grid md:grid-cols-12 gap-7 p-5 max-w-5xl mx-auto transition-all duration-500">
         <div className="col-span-12 md:col-span-3 flex flex-col gap-5">
           <section>
-            <div className="h-40 w-40 overflow-hidden rounded-full border-8 border-gray-400 shadow-lg mx-auto md:m-0">
+            <div className="h-48 w-48 overflow-hidden rounded-full border-8 border-gray-400 shadow-lg mx-auto md:m-0">
               <Image
                 src="/profile.jpg"
                 alt="profile"
-                height={200}
-                width={200}
+                height={300}
+                width={300}
               />
             </div>
 
-            <h1 className="text-4xl font-bold tracking-wider text-center md:text-left">
+            <h1 className="text-4xl font-bold tracking-wide text-center md:text-left">
               Henry Li
             </h1>
             <h3 className="font-light text-center md:text-left">
@@ -56,7 +56,7 @@ export default function Home() {
           </section>
 
           <section>
-            <h3 className="font-bold tracking-wide underline decoration-2">
+            <h3 className="font-bold tracking-wider underline decoration-2">
               FIND ME
             </h3>
             <p className="flex gap-1 items-center">
@@ -74,7 +74,7 @@ export default function Home() {
           </section>
 
           <section>
-            <h3 className="font-bold tracking-wide underline decoration-2">
+            <h3 className="font-bold tracking-wider underline decoration-2">
               EDUCATION
             </h3>
             <div className="flex justify-between items-center">
@@ -90,7 +90,7 @@ export default function Home() {
           </section>
 
           <section>
-            <h3 className="font-bold tracking-wide underline decoration-2">
+            <h3 className="font-bold tracking-wider underline decoration-2">
               LANGUAGES
             </h3>
             <div className="tooltip tooltip-bottom w-full" data-tip="Fluent">
@@ -134,7 +134,7 @@ export default function Home() {
 
         <div className="col-span-12 md:col-span-9 flex flex-col gap-5">
           <section>
-            <h3 className="font-bold tracking-wide underline decoration-2">
+            <h3 className="font-bold tracking-wider underline decoration-2">
               INTRO
             </h3>
             <p>
@@ -143,17 +143,13 @@ export default function Home() {
             </p>
           </section>
           <section>
-            <h3 className="font-bold tracking-wide underline decoration-2 mb-1">
-              TECH
+            <h3 className="font-bold tracking-wider underline decoration-2 mb-1">
+              TOOLS
             </h3>
 
             <div className="flex flex-wrap items-center gap-2">
               <div className="tooltip tooltip-bottom" data-tip="Rust">
                 <Image src="/rust.svg" alt="Rust" height={35} width={35} />
-              </div>
-
-              <div className="tooltip tooltip-bottom" data-tip="Python">
-                <Image src="/python.svg" alt="Python" height={35} width={35} />
               </div>
               <div className="tooltip tooltip-bottom" data-tip="Svelte">
                 <Image
@@ -189,58 +185,63 @@ export default function Home() {
           </section>
 
           <section>
-            <h3 className="font-bold tracking-wide underline decoration-2">
+            <h3 className="font-bold tracking-wider underline decoration-2">
               EXPERIENCES
             </h3>
             <div className="flex flex-col gap-5">
               <div>
-                <div>
-                  <div className="flex justify-between items-center">
-                    <div>
-                      <p className="text-xl font-bold">
-                        Ace Technologies Limited
-                      </p>
-                      <p className="italic">Analyst Programmer</p>
-                    </div>
-                    <p className="text-sm italic">Apr 22 - Present</p>
+                <div className="flex justify-between items-center">
+                  <div>
+                    <p className="text-xl font-bold">
+                      Ace Technologies Limited
+                    </p>
+                    <p className="italic">Analyst Programmer</p>
                   </div>
-
-                  <div className="flex flex-wrap items-center gap-2">
-                    <div className="tooltip tooltip-bottom" data-tip="Flutter">
-                      <Image
-                        src="/flutter.svg"
-                        alt="Flutter"
-                        height={35}
-                        width={35}
-                      />
-                    </div>
-                    <div
-                      className="tooltip tooltip-bottom"
-                      data-tip="Typescript"
-                    >
-                      <Image
-                        src="/typescript-icon.svg"
-                        alt="Typescript"
-                        height={35}
-                        width={35}
-                      />
-                    </div>
-                    <div
-                      className="tooltip tooltip-bottom"
-                      data-tip="AWS Lambda"
-                    ></div>
-                    <div className="tooltip tooltip-bottom" data-tip="Gitlab">
-                      <Image
-                        src="/gitlab.svg"
-                        alt="Gitlab"
-                        height={35}
-                        width={35}
-                      />
-                    </div>
-                  </div>
-                  <ul className="list-disc ml-4"></ul>
+                  <p className="text-sm italic">Apr 22 - Present</p>
                 </div>
 
+                <div className="flex flex-wrap items-center gap-2">
+                  <div className="tooltip tooltip-bottom" data-tip="Flutter">
+                    <Image
+                      src="/flutter.svg"
+                      alt="Flutter"
+                      height={35}
+                      width={35}
+                    />
+                  </div>
+                  <div className="tooltip tooltip-bottom" data-tip="Dart">
+                    <Image src="/dart.svg" alt="Dart" height={35} width={35} />
+                  </div>
+                  <div className="tooltip tooltip-bottom" data-tip="Typescript">
+                    <Image
+                      src="/typescript-icon.svg"
+                      alt="Typescript"
+                      height={35}
+                      width={35}
+                    />
+                  </div>
+                  <div
+                    className="tooltip tooltip-bottom"
+                    data-tip="AWS Lambda"
+                  ></div>
+                  <div className="tooltip tooltip-bottom" data-tip="Gitlab">
+                    <Image
+                      src="/gitlab.svg"
+                      alt="Gitlab"
+                      height={35}
+                      width={35}
+                    />
+                  </div>
+                </div>
+                <ul className="list-disc ml-4">
+                  <li>
+                    Collaborate with colleagues on multiple web applications
+                  </li>
+                  <li>Compose extensive documentations for new projects</li>
+                  <li>Collaborate with DevOps colleagues to implement CI/CD</li>
+                </ul>
+              </div>
+              <div>
                 <div className="flex justify-between items-center">
                   <div>
                     <p className="text-xl font-bold">
@@ -298,21 +299,17 @@ export default function Home() {
                       width={35}
                     />
                   </div>
-                  <div className="tooltip tooltip-bottom" data-tip="Kubernetes">
-                    <Image
-                      src="/kubernetes.svg"
-                      alt="Kubernetes"
-                      height={35}
-                      width={35}
-                    />
-                  </div>
                 </div>
                 <ul className="list-disc ml-4">
                   <li>
-                    Collaborate with colleagues on multiple web applications
+                    Develop a new web application using modern toolings for
+                    Cathay
                   </li>
-                  <li>Compose extensive documentations for new projects</li>
-                  <li>Collaborate with DevOps colleagues to implement CI/CD</li>
+                  <li>Compose extensive documentations for the new project</li>
+                  <li>
+                    Collaborate with DevOps colleagues to implement CI/CD
+                    pipeline
+                  </li>
                 </ul>
               </div>
 
@@ -339,11 +336,26 @@ export default function Home() {
                   <div className="tooltip tooltip-bottom" data-tip="Vue.js">
                     <Image src="/vue.svg" alt="Vue.js" height={35} width={35} />
                   </div>
-
+                  <div className="tooltip tooltip-bottom" data-tip="Nuxt.js">
+                    <Image
+                      src="/nuxt-icon.svg"
+                      alt="Nuxt.js"
+                      height={35}
+                      width={35}
+                    />
+                  </div>
                   <div className="tooltip tooltip-bottom" data-tip="Bootstrap">
                     <Image
                       src="/bootstrap.svg"
                       alt="Bootstrap"
+                      height={35}
+                      width={35}
+                    />
+                  </div>
+                  <div className="tooltip tooltip-bottom" data-tip="Python">
+                    <Image
+                      src="/python.svg"
+                      alt="Python"
                       height={35}
                       width={35}
                     />
@@ -377,15 +389,12 @@ export default function Home() {
                   </div>
                 </div>
                 <ul className="list-disc ml-4">
-                  <li>Develop multiple frontend web applications</li>
                   <li>
-                    Develop backend services to support functionalities like
-                    authentication, data storage and retrieval, etc...
+                    Develop multiple full-stack web applications using JS-based
+                    toolings
                   </li>
-                  <li>
-                    Work on UI wireframing and web design with design team
-                  </li>
-                  <li>Enhance project workflow with CI/CD pipeline</li>
+                  <li>Provide wireframes to design team for ideation</li>
+                  <li>Implement CI/CD on Github for faster deployment</li>
                 </ul>
               </div>
 
